@@ -43,8 +43,6 @@
       color: white;
       .checked {
         text-decoration: line-through 3px solid red;
-
-        color: black !important;
       }
 
       tr:nth-child(even) {
