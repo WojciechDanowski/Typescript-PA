@@ -1,0 +1,80 @@
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.p__empty__list {
+  margin-top: 25%;
+  font-size: 34px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  .todo__span {
+    font-size: 32px;
+  }
+
+  button {
+    width: 75px;
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  table {
+    width: 100%;
+
+    font-size: 27px;
+
+    tr {
+      line-height: 15px;
+    }
+
+    thead {
+      tr {
+        background-color: white;
+      }
+    }
+
+    tbody {
+      color: white;
+      .checked {
+        text-decoration: line-through 3px solid red;
+
+        color: black !important;
+      }
+
+      tr:nth-child(even) {
+        background-color: lightgray;
+      }
+
+      tr:nth-child(odd) {
+        background-color: gray;
+      }
+
+      td.icon {
+        i {
+          margin-top: 10px !important;
+        }
+      }
+
+      td.icon:hover {
+        color: white;
+
+        cursor: pointer;
+      }
+      td {
+        p {
+          margin-top: 15px;
+        }
+        p.name:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
